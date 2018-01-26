@@ -62,11 +62,3 @@ void Panier::afficher() {
 		cout << "Votre total est: " << totalAPayer_ << endl;
 
 }
-
-
-
-
-Produit ** contenuPanier_;
-int  nombreContenu_;
-int capaciteContenu_;
-double totalAPayer_;
