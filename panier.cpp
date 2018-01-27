@@ -52,12 +52,12 @@ void Panier::livrer() {
 void Panier::afficher() {
 		cout << "La capacite de votre panier est: " << capaciteContenu_ << endl;
 		cout << "Le nombre de produits dans votre panier est: " << nombreContenu_ << endl;
-		cout << " Les produits de votre panier sont : " << endl;
+		cout << "Les produits de votre panier sont : " << endl;
 		for (int i = 0; i < nombreContenu_ ; i++)
 		{
-			cout << "Produit" << (i+1) << endl << endl;
+			cout << "Produit " << (i+1) << endl << endl;
 			 contenuPanier_[i]->afficher();
 		}
-		cout << "Votre total est: " << totalAPayer_ << endl;
+		cout << "Votre total est: " << totalAPayer_ << endl << endl;
 
 }

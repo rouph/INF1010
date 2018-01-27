@@ -75,16 +75,17 @@ void Client::afficherPanier(){
 	cout << prenom_ << endl;
 	cout << identifiant_ << endl;
 	cout << codePostal_ << endl;
-	cout << dateNaissance_ << endl;
+	cout << dateNaissance_ << endl << endl;
 	
 	if (!(monPanier_ == nullptr))
 		monPanier_->afficher();
 	else
-		cout << "votre panier est vide";
+		cout << "votre panier est vide" << endl;
 	
 }
 
 void Client::livrerPanier(){
 
 	monPanier_->livrer();
+	monPanier_ = nullptr;
 }
