@@ -15,12 +15,12 @@ Rayon::Rayon(string cat):
 	categorie_ = cat;
 }
 
-string Rayon::obtenirCategorie()
+string Rayon::obtenirCategorie() const
 {
 	return categorie_;
 }
 																														
-Produit ** Rayon::obtenirTousProduits()
+Produit ** Rayon::obtenirTousProduits() const
 {	
 	return tousProduits_;
 }																														
@@ -30,11 +30,11 @@ Produit ** Rayon::obtenirTousProduits()
 // Methodes d'acces
 
 
-int Rayon::obtenirCapaciteProduits()
+int Rayon::obtenirCapaciteProduits() const
 {
 	return capaciteProduits_;
 }
-int Rayon::obtenirNombreProduits()
+int Rayon::obtenirNombreProduits() const
 {
 	return nombreProduits_;
 }

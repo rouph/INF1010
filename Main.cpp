@@ -72,6 +72,6 @@ int main()
 	//12- afficher le contenu du panier du client
 	client1.afficherPanier();
 	//13-  terminer le programme correctement
-    
+	wcout << " test";
     return 0;
 }

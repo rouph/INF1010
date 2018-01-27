@@ -16,25 +16,30 @@ Client::Client(string  nom, string prenom, int identifiant, string codePostal, l
 
 // methodes d'acces
 
-string Client::obtenirNom(){
+string Client::obtenirNom() const
+{
 	return nom_;
 }
 
 
 
-string Client::obtenirPrenom(){
+string Client::obtenirPrenom() const
+{
 
 	return prenom_;
 }
-int Client::obtenirIdentifiant(){
+int Client::obtenirIdentifiant() const
+{
 	return identifiant_;
 
 }
-string Client::obtenirCodePostal(){
+string Client::obtenirCodePostal() const
+{
 
 	return codePostal_;
 }
-long Client::obtenirDateNaissance(){
+long Client::obtenirDateNaissance() const
+{
 	return dateNaissance_;
 }
 

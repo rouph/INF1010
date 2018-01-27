@@ -14,19 +14,19 @@ Produit::Produit(string nom, int reference, double prix)
 	prix_ = prix;
 }
 
-string Produit::obtenirNom()
+string Produit::obtenirNom() const
 {
 	return nom_;
 
 }
-int Produit::obtenirReference()
+int Produit::obtenirReference() const
 {
 	return reference_;
 		
 }
 
 
-double Produit::obtenirPrix()
+double Produit::obtenirPrix() const
 {
 	return prix_;
 }

@@ -8,17 +8,17 @@ Panier::Panier(int capacite)
 	totalAPayer_ = nombreContenu_ = 0;
 }
 
-Produit **  Panier::obtenirContenuPanier()
+Produit **  Panier::obtenirContenuPanier() const
 {
 	return contenuPanier_;
 }
 
-int Panier::obtenirNombreContenu()
+int Panier::obtenirNombreContenu() const
 {
 	return nombreContenu_;
 }
 
-double Panier::obtenirTotalApayer()
+double Panier::obtenirTotalApayer() const
 {
 	return totalAPayer_;
 }
@@ -39,8 +39,7 @@ void Panier::ajouter(Produit * prod)
 }
 
 void Panier::livrer() {
-	//for (int i = 0; i < nombreContenu_; i++) 
-	//	delete contenuPanier_[i];
+	
 	delete[] contenuPanier_;
 	contenuPanier_ = nullptr;
 	nombreContenu_ = 0;
